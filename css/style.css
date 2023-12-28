@@ -1,0 +1,37 @@
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background:var(--body);
+   overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }   
+
+  .topImage {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    opacity: 0.05;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.topImage img{
+    width: 100%;
+    height: 300px;
+}
+
+.hero{
+    height: 100%;
+}
+.hero #waves{
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+}
+/* Optional: You can keep the rest of the styles if needed */
+
+
