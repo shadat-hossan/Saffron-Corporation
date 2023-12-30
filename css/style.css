@@ -9,7 +9,7 @@ body {
     padding: 0;
   }   
 
-  .topImage {
+.topImage {
     position: fixed;
     top: -50px;
     left: 0;
@@ -28,9 +28,78 @@ body {
 }
 .hero #waves{
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
     position: absolute;
-    bottom: 0px;
+    bottom: -200px;
+    z-index: 0;
+}
+
+
+
+.slider-column img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+.slider-column .swiper-slider{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.slider-section {
+  margin: 0 auto;
+  padding-block: 5rem;
+  margin-top: 80px;
+}
+
+.slider-section .slider-column{
+  max-width: 75rem;
+  height: auto;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 1rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.75;
+  border-radius: 50%;
+  color: var(--white-100);
+  background: var(--black-300);
+}
+.slider-details{
+  height: 250px;
+  background: rgba(255, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-radius: 20px;
+  box-shadow: 0px 0px 8px -2px rgba(145,145,145,0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.slier-content{
+  padding: 20px 30px;
+  text-align: center;
+}
+.slier-content h1{
+  color: var(--commonColor);
+  font-size: var(--titlefontSize);
+  font-weight: var(--sixFont);
+}
+.slier-content p{
+  font-size: var(--pfontSize);
 }
 /* Optional: You can keep the rest of the styles if needed */
 
