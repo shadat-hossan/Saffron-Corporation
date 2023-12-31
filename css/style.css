@@ -1,13 +1,63 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
 body {
-  font-family: "Bai Jamjuree", sans-serif;
-  background: var(--body);
-  overflow-x: hidden;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background:var(--body);
+    font-weight:400;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ul, ol, li { list-style: none; }
+img, fieldset { border: none; }
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+figure {
+    margin: 0;
+    padding: 0;
 }
+.clearfix {
+    clear: both;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+embed, iframe, object, video { max-width: 100%; }
+html { -webkit-text-size-adjust: none; }
+input, textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input[placeholder], 
+[placeholder], 
+*[placeholder] {color: inherit}
+*::-webkit-input-placeholder { color:inherit}
+*:-moz-placeholder {
+    color:inherit ;
+    opacity:  1;
+}
+*::-moz-placeholder {
+    color:inherit ;
+    opacity:  1;
+}
+*:-ms-input-placeholder {color:inherit}
 
 .topImage {
   position: fixed;
@@ -255,4 +305,118 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 126.316% */
+}
+
+/* ------jahangir---- */
+.d-flex { display: flex; }
+.flex-wrap {flex-wrap:wrap;}
+.flex-nowrap {flex-wrap:nowrap;}
+.center_content {
+    max-width: 1269px;
+    width: 100%;
+    margin: 0 auto;
+}
+.work_on_area {
+    padding: 0 70px;
+    position: relative;
+    z-index: 5;
+}
+.work_on_holder {
+    padding: 30px 0 100px 0;
+}
+.section_title {
+    text-align: center;
+}
+.section_title h2 {
+    color: #B50107;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative; 
+    padding-bottom: 15px;
+}
+.section_title h2::after {
+    content: '';
+    width: 67px;
+    height: 4px;
+    border-radius: 4px;
+    background: #B50107;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0 auto;
+}
+.section_title { padding-bottom: 37px; }
+.service_column_bg {
+    width: 100%;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 6px 1px rgba(107, 107, 107, 0.09);
+    padding: 22px 22px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.service_column {
+    width: 25%;
+    padding: 10px 11px 30px 11px;
+}
+#service_carousel .service_column { width: 100%; height: 100%; }
+#service_carousel.owl-carousel .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_icon { padding-bottom: 25px;}
+.service_icon img { margin: 0 auto; width: auto !important; }
+.service_column_bg h3 {
+    color: #B50107;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 17px;
+}
+.service_column_bg h3 a {color: #B50107;}
+.service_column_bg p {
+    color: #828282;
+    text-align: center;
+    font-size: 17px;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.learn_more_btn {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #D32A2F;
+    background: rgba(208, 207, 207, 0.00);
+    border-radius: 0 10px 0 10px;
+    font-size: 17px;
+    color: #C62E26;
+    margin-top: auto;
+    position: relative;
+}
+.learn_more_btn span {
+    display: inline-block;
+    padding-right: 28px;
+    background: url('../img/arrow_right.svg') no-repeat right center;
+    line-height: 20px;
+}
+.learn_more_btn:hover > span {
+    background: url('../img/arrow_right_hover.svg') no-repeat right center;
+}
+.learn_more_btn:hover {
+    background-color: #B52025;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 991px){
+.work_on_area {
+    padding: 0 9px;
+} 
 }

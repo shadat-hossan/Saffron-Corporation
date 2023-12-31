@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/root.css" />
     <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -133,8 +137,63 @@
         </div>
         <canvas id="waves"></canvas>
       </section>
+      <div class="work_on_area">
+        <div class="work_on_holder center_content">
+            <div class="section_title wow rollIn" data-wow-duration="2s"><h2>Work On</h2></div>
+            <div id="service_carousel" class="work_on_feature owl-carousel">
+                <div class="service_column wow fadeInDown" data-wow-duration="2s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon1.svg" alt=""></div>
+                        <h3><a href="#">Software Development</a></h3>
+                        <p>Experience the artistry of our software development team as they craft bespoke solutions that align perfectly with your business objectives...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+                <div class="service_column wow fadeInDown" data-wow-duration="2.5s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon2.svg" alt=""></div>
+                        <h3><a href="#">Artificial Intelligence & Block Chain </a></h3>
+                            <p>Harness the transformative power of Artificial Intelligence (AI) and Block chain technologies to revolutionize your business landscape...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+                <div class="service_column wow fadeInDown" data-wow-duration="2.8s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon3.svg" alt=""></div>
+                        <h3><a href="#">Robotics</a></h3>
+                        <p>Witness the seamless integration of human ingenuity and robotics as we redefine automation design, construction, and use of machines (robots) to...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+                <div class="service_column wow fadeInDown" data-wow-duration="3s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon4.svg" alt=""></div>
+                        <h3><a href="#">Collaboration Tools</a></h3>
+                        <p>Maximize productivity and streamline collaboration with our cutting-edge Unified Communications (UC) and Workforce Management tools...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+                <div class="service_column wow fadeInDown" data-wow-duration="3.2s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon3.svg" alt=""></div>
+                        <h3><a href="#">Robotics</a></h3>
+                        <p>Witness the seamless integration of human ingenuity and robotics as we redefine automation design, construction, and use of machines (robots) to...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+                <div class="service_column wow fadeInDown" data-wow-duration="3.6s">
+                    <div class="service_column_bg">
+                        <div class="service_icon"><img src="img/icon4.svg" alt=""></div>
+                        <h3><a href="#">Collaboration Tools</a></h3>
+                        <p>Maximize productivity and streamline collaboration with our cutting-edge Unified Communications (UC) and Workforce Management tools...</p>
+                        <a href="#" class="learn_more_btn"><span>LEARN MORE</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <section class="choose">
-        <div class="row">
+        <div class="center_content">
           <div class="chooseContainer">
             <div class="chooseLeftPart">
               <div class="chooseUsTitle">
@@ -217,9 +276,49 @@
         </div>
       </section>
     </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/waves.js"></script>
     <script src="js/swipe.js"></script>
-  </body>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+            $('#service_carousel').owlCarousel({
+                loop:true,
+                margin: 0,
+                items: 4,
+                nav:true,
+                mouseDrag: true,
+                touchDrag: true,
+                dots:true,
+                slideBy: 1,
+                dotsEach: 1,
+                responsiveClass:true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0,
+                        rows: true,
+                        dotsEach: 2,
+                        rowsCount: 2
+                    },
+                    992: {
+                        items: 3,
+                        slideBy: 1,
+                        dotsEach: 2,
+                    },
+                    1280: {
+                        items: 4,
+                        slideBy: 1,
+                        dotsEach: 2,
+                    }
+                },
+            });
+
+    </script>
+    </body>
 </html>
