@@ -1,4 +1,3 @@
-
 var ClassicalNoise = function(r) {
 	if (r == undefined) r = Math;
   this.grad3 = [[1,1,0],[-1,1,0],[1,-1,0],[-1,-1,0], 
@@ -88,20 +87,20 @@ var canvas = document.getElementById('waves'),
   ctx = canvas.getContext('2d'),
   perlin = new ClassicalNoise(),
   variation = 0.0015,
-  amp = 250,
+  amp = 280,
   maxLines = 50,
   variators = [],
   canvasWidth,
   canvasHeight,
   startY;
 
-for (var i = 0, u = 0; i < maxLines; i++, u += 0.020) {
+for (var i = 0, u = 0; i < maxLines; i++, u += 0.030) {
   variators[i] = u;
 }
 
 function draw() {
-  ctx.shadowColor = "white";
-  ctx.shadowBlur = 1;
+ 
+  
 
   for (var i = 0; i <= maxLines; i++) {
     ctx.beginPath();
@@ -114,10 +113,10 @@ function draw() {
 
 
     var color = Math.floor(100 * Math.abs(y));
-    var alpha = Math.min(Math.abs(y), 0.8) + 0.1;
+    var alpha = Math.min(Math.abs(y)) + 1;
 
 
-    alpha = isNaN(alpha) ? 0.5 : alpha;
+    alpha = isNaN(alpha) ? 1 : alpha;
 
     var gradient = ctx.createLinearGradient(0, 0, canvasWidth, 0);
     gradient.addColorStop(0, "rgba(246,140,30," + alpha + ")");
@@ -127,7 +126,7 @@ function draw() {
     ctx.stroke();
     ctx.closePath();
 
-    variators[i] += 0.01;
+    variators[i] += 0.0020;
   }
 }
 

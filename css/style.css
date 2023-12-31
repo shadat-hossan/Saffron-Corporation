@@ -57,7 +57,7 @@ padding-bottom: 10px;
 }
 
 .slider-section .slider-column{
-  max-width: 75rem;
+  max-width: 900px;
   height: auto;
   margin-inline: auto;
   padding-inline: 1.25rem;
@@ -79,28 +79,63 @@ padding-bottom: 10px;
 }
 .slider-details{
   height: 250px;
-  background: rgba(255, 0, 0, 0);
+  /* background: rgba(255, 0, 0, 0); */
   display: flex;
   justify-content: center;
   align-items: center;
-   border-radius: 20px;
-  box-shadow: 0px 0px 8px -2px rgba(145,145,145,0.5);
-  background-color: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+   /* border-radius: 20px; */
+  /* box-shadow: 0px 0px 8px -2px rgba(145,145,145,0.5); */
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  /* -webkit-backdrop-filter: blur(2px); */
+  /* backdrop-filter: blur(2px); */
 }
 .slier-content{
   padding: 20px 30px;
   text-align: center;
 }
 .slier-content h1{
+  margin-bottom: 10px;
+  font-size: 33px !important;
   color: var(--commonColor);
   font-size: var(--titlefontSize);
   font-weight: var(--sixFont);
 }
 .slier-content p{
+  color: #555;
+  font-size: 15px !important;
   font-size: var(--pfontSize);
 }
 /* Optional: You can keep the rest of the styles if needed */
 
 
+.animationBabal{
+  border-radius: 50%;
+  position: absolute;
+  /* background: linear-gradient(to right, #F3831F 30%, #DA3D27); */
+  
+}
+
+.anima1{
+  width: 50px;
+  height: 50px ;
+  top: 20%;
+  left: 18%;
+  background: linear-gradient(to right, #F3831F 30%, #DA3D27);
+}
+
+.anima2{
+  width: 70px;
+  height: 70px ;
+  top: 22%;
+  left: 78%;
+  background: linear-gradient(to right, #F3831F 30%, #DA3D27);
+}
+
+.anima3{
+  width: 100px;
+  height: 100px ;
+  top: 55%;
+  left: 13%;
+  border: 5px solid #F3831F;
+  animation: anima3 1s timing-function delay iteration-count direction fill-mode;
+}
