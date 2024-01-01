@@ -105,7 +105,7 @@
 }
 /* ScrollBar Effect */
 .shrink{
-  padding: 0px 40px;
+  padding: 10px 40px;
   backdrop-filter: blur(90px);
   background: #fff;
   box-shadow: 0px 1px 4px 0px rgba(189,189,189,0.4);
