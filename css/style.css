@@ -218,7 +218,6 @@ input[placeholder],
 
 .chooseUsMineTitle {
   color: #828282;
-  font-family: Bai Jamjuree;
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -228,7 +227,6 @@ input[placeholder],
 .chooseUsHeadTitle {
   width: 543px;
   color: #c62e26;
-  font-family: Bai Jamjuree;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -238,7 +236,6 @@ input[placeholder],
 .chooseUsparagraph p {
   color: #828282;
   width: 592px;
-  font-family: Bai Jamjuree;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -290,7 +287,6 @@ input[placeholder],
 .chooseRightPartCardTopContant h4 {
   color: #000;
   width: 205px;
-  font-family: Bai Jamjuree;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -300,7 +296,6 @@ input[placeholder],
 
 .chooseRightPartCardBottonContant p {
   color: #828282;
-  font-family: Bai Jamjuree;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -419,4 +414,13 @@ input[placeholder],
 .work_on_area {
     padding: 0 9px;
 } 
+}
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
