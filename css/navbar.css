@@ -60,6 +60,7 @@
   background-color: var(--commonColor);
   transition: all 0.3s ;
 }
+.navbar-container .navbar-menu ul li.active > a::after,
 .navbar-container .navbar-menu ul li:hover a::after {
   width: 100%;
 }
@@ -114,11 +115,12 @@
   padding: 0px 20px;
 }
 .navbar-container .logo .logoShirnk{
-  width: 150px;
+  width: 190px;
 }
 .navbar-container .navbar-menu ul li .menuItemsAllA{
-  font-size: 12px;
+  font-size: 15px;
 }
+
 @media (max-width: 792px) {
   .navbar-container .mobileLogo{
       display: block;
