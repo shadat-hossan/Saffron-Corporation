@@ -26,10 +26,10 @@ how can you set up your project??
   2. git checkout Enter_your_selected_branch
 ```
 
-When done you work...
+When done with your work...
 
 ```bash
-  3. git pull
+  3. git pull origin Enter_your_selected_branch
 ```
 
 ```bash
