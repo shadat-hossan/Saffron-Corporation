@@ -292,11 +292,9 @@ input[placeholder],
   animation: anima3 1s timing-function delay iteration-count direction fill-mode;
 }
 
-/* Choose Us Style in Heare */
-
+/*============= Start Choose Us Section Style =============*/
 .choose {
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.192); */
   padding: 40px;
 }
 
@@ -307,6 +305,7 @@ input[placeholder],
 
 .chooseContainer {
   display: flex;
+  gap: 40px;
 }
 
 .chooseLeftPart {
@@ -315,7 +314,6 @@ input[placeholder],
 
 .chooseUsTitle {
   width: 100%;
-  /* background-color: #fff; */
   padding: 28px 22px;
   border-left: 6px solid #d11d27;
   margin-bottom: 28px;
@@ -330,7 +328,6 @@ input[placeholder],
 }
 
 .chooseUsHeadTitle {
-  width: 543px;
   color: #c62e26;
   font-size: 40px;
   font-style: normal;
@@ -340,7 +337,6 @@ input[placeholder],
 
 .chooseUsparagraph p {
   color: #828282;
-  width: 592px;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -358,14 +354,11 @@ input[placeholder],
   grid-template-columns: auto auto;
   row-gap: 22px;
   column-gap: 22px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   position: relative;
 }
 
 .chooseRightPartCard {
-  width: 285px;
-  height: 191px;
-  flex-shrink: 0;
   border-radius: 20px;
   background: linear-gradient(
     180deg,
@@ -404,6 +397,8 @@ input[placeholder],
   font-weight: 400;
   line-height: 24px; /* 126.316% */
 }
+/*============= End Choose Us Section Style =============== */
+
 @media only screen and (max-width: 991px) {
   .slier-content h1 {
     font-size: 26px;
@@ -1124,3 +1119,122 @@ input[placeholder],
   background: #d11d27;
 }
 /* End Happy Clients Say Section */
+
+/* Start Responsib */
+
+@media only screen and (max-width: 1250px) {
+  .chooseContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chooseContainer {
+    display: block;
+  }
+  .chooseRightPartCardTopContant h4 {
+    text-align: left;
+  }
+  .chooseRightPart {
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  }
+  .happyClientsCOntainer {
+    padding: 30px;
+    flex-direction: column;
+  }
+  .reviewMassage {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 794px) {
+  .chooseContainer {
+    display: block;
+  }
+  .chooseUsMineTitle {
+    color: #828282;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .chooseUsHeadTitle {
+    font-size: 30px;
+  }
+  .chooseRightPartCardTopContant h4 {
+    text-align: left;
+  }
+  .chooseRightPart {
+    grid-template-columns: auto auto;
+  }
+  .chooseUsparagraph p {
+    font-size: 14px;
+  }
+  .chooseRightPartCardBottonContant p {
+    font-size: 14px;
+  }
+  .chooseUsTitle {
+    padding: 26px 18px;
+  }
+
+  /* Happy cliends */
+  .testimonoal {
+    margin-bottom: 30px;
+  }
+  .reviewMassage {
+    flex-direction: column;
+    padding: 10px;
+    height: 350px;
+  }
+  .reviewMassageLeft {
+    width: 130px;
+    height: 140px;
+    margin-left: 0%;
+    border-radius: 15px;
+    margin-top: -8%;
+  }
+  .reviewMassageCenter {
+    padding: 0 20px;
+  }
+
+  .reviewMassageCenter p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .reviewMassageRight {
+    transform: rotate(90deg);
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .chooseRightPart {
+    grid-template-columns: auto;
+  }
+  .chooseUsHeadTitle {
+    font-size: 25px;
+  }
+}
+.titalbar h5 {
+  font-size: 12px;
+}
+
+.titalbar h2 {
+  font-size: 30px;
+}
+.reviewMassageCenter h5 {
+  font-size: 12px;
+}
+
+.reviewMassageCenter h2 {
+  font-size: 25px;
+}
+
+/* End Responsib */
