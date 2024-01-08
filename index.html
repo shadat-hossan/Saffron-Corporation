@@ -26,14 +26,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       rel="stylesheet"
     />
-
-    <!-- javaScript Script File Link -->
-    <script src="js/script.js" defer></script>
-
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <div class="preloader_area preloader">
+      <div class="page-transition">
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <div class="div"></div>
+        <ul class="preload">
+          <li><img src="img/s.svg" alt="s" /></li>
+          <li><img src="img/a.svg" alt="a" /></li>
+          <li><img src="img/f.svg" alt="f" /></li>
+          <li><img src="img/f.svg" alt="f" /></li>
+          <li><img src="img/r.svg" alt="r" /></li>
+          <li><img src="img/o.svg" alt="o" /></li>
+          <li><img src="img/n.svg" alt="n" /></li>
+        </ul>
+      </div>
+    </div>
     <video autoplay="" muted="" loop="" id="myVideo">
       <source
         src="https://saffroncorporation.com.bd/saffron-animation.mp4"
@@ -120,9 +137,79 @@
         </div>
       </div>
 
+      <div class="weProvide">
+        <div class="center_content flex-wrap">
+          <div class="weProvideLeftSide">
+            <div
+              class="fourtheen wow pulse"
+              data-wow-delay="300ms"
+              data-wow-iteration="infinite"
+              data-wow-duration="2s"
+            >
+              <!-- <img src="img/about-batch.svg" alt=""> -->
+              <span> 17+ <br />Years<br />Success</span>
+            </div>
+            <canvas id="tp__canvas"></canvas>
+          </div>
+          <div class="weProvideRightSide">
+            <div class="weProvideTitle">
+              <h3>WE PROVIDE</h3>
+              <h1>Cutting-Edge Solutions For Technology & IT Services</h1>
+            </div>
+            <div class="weProvidePeragrapg">
+              <p>
+                At Saffron Corporation Ltd., we take pride in providing
+                cutting-edge solutions for technology and IT services. With our
+                deep expertise and unwavering commitment to innovation, we
+                empower businesses to navigate the ever-evolving digital
+                landscape with confidence and success. <br /><br />
+                From software development to artificial intelligence, robotics,
+                and data analysis, our comprehensive range of services caters to
+                diverse industry needs. Our talented team of professionals
+                leverages the latest technologies and industry best practices to
+                deliver bespoke solutions that drive efficiency, enhance
+                productivity, and accelerate growth. With a keen focus on
+                staying at the forefront of technological advancements, we
+                strive to shape the future of technology by consistently pushing
+                boundaries and embracing emerging trends. Partner with us and
+                unlock the transformative power of our cutting-edge solutions
+                for unparalleled success in the digital realm.
+              </p>
+              <div class="weProvideCard">
+                <div class="weProvideCards">
+                  <div class="weProvideIcon">
+                    <img src="img/Vector.png" />
+                  </div>
+                  <div class="weProvideDetails">
+                    <p>Serverless & on-premises</p>
+                  </div>
+                </div>
+                <div class="weProvideCards">
+                  <div class="weProvideIcon">
+                    <img src="img/Vector.png" />
+                  </div>
+                  <div class="weProvideDetails">
+                    <p>Serverless & on-premises</p>
+                  </div>
+                </div>
+                <div class="weProvideCards">
+                  <div class="weProvideIcon">
+                    <img src="img/Vector.png" />
+                  </div>
+                  <div class="weProvideDetails">
+                    <p>Serverless & on-premises</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="work_on_area">
+        <div class="work_on_animation"><div id="particles-js3"></div></div>
         <div class="work_on_holder center_content">
-          <div class="section_title wow rollIn" data-wow-duration="2s">
+          <div class="section_title wow fadeInDown" data-wow-duration="2s">
             <h2>Work On</h2>
           </div>
           <div id="service_carousel" class="work_on_feature owl-carousel">
@@ -214,8 +301,6 @@
         </div>
       </div>
 
-      <!-- Start Choose Us Section -->
-
       <section class="choose">
         <div class="center_content">
           <div class="chooseContainer">
@@ -244,9 +329,14 @@
               </div>
             </div>
             <div class="chooseRightPart">
-              <div class="chooseRightPartCard">
+              <div
+                class="chooseRightPartCard"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <div class="chooseRightPartCardTopContant">
-                  <img src="./img/logo/Vector.svg" alt="Check Icon" />
+                  <img src="img/icon_check.png" alt="Check Icon" />
                   <h4>Unmatched Variety of Services</h4>
                 </div>
                 <div class="chooseRightPartCardBottonContant">
@@ -256,9 +346,14 @@
                   </p>
                 </div>
               </div>
-              <div class="chooseRightPartCard">
+              <div
+                class="chooseRightPartCard"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <div class="chooseRightPartCardTopContant">
-                  <img src="./img/logo/Vector.svg" alt="Check Icon" />
+                  <img src="img/icon_check.png" alt="Check Icon" />
                   <h4>Skilled Teams, Unleashing Innovation</h4>
                 </div>
                 <div class="chooseRightPartCardBottonContant">
@@ -268,9 +363,14 @@
                   </p>
                 </div>
               </div>
-              <div class="chooseRightPartCard">
+              <div
+                class="chooseRightPartCard"
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <div class="chooseRightPartCardTopContant">
-                  <img src="./img/logo/Vector.svg" alt="Check Icon" />
+                  <img src="img/icon_check.png" alt="Check Icon" />
                   <h4>Enterprise-Grade Services, Uncompromised Quality</h4>
                 </div>
                 <div class="chooseRightPartCardBottonContant">
@@ -280,9 +380,14 @@
                   </p>
                 </div>
               </div>
-              <div class="chooseRightPartCard">
+              <div
+                class="chooseRightPartCard"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 <div class="chooseRightPartCardTopContant">
-                  <img src="./img/logo/Vector.svg" alt="Check Icon" />
+                  <img src="img/icon_check.png" alt="Check Icon" />
                   <h4>
                     Reliable, Client-Centric Approach & Collaborative
                     Partnership
@@ -299,8 +404,6 @@
           </div>
         </div>
       </section>
-
-      <!-- End Choose Us Section -->
     </div>
 
     <div class="our_clients_area">
@@ -313,58 +416,58 @@
           data-wow-duration="2s"
         >
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards1">
               <img src="img/clients/client_logo1.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards3">
               <img src="img/clients/client_logo2.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards2">
               <img src="img/clients/client_logo3.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards4">
               <img src="img/clients/client_logo4.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards5">
               <img src="img/clients/client_logo5.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards6">
               <img src="img/clients/client_logo6.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards7">
               <img src="img/clients/client_logo7.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards8">
               <img src="img/clients/client_logo8.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards9">
               <img src="img/clients/client_logo9.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards10">
               <img src="img/clients/client_logo10.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards11">
               <img src="img/clients/client_logo11.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards12">
               <img src="img/clients/client_logo12.png" />
             </div>
           </div>
           <div class="client_item">
-            <div class="client_logo">
+            <div class="client_logo card-awards13">
               <img src="img/clients/client_logo9.png" />
             </div>
-            <div class="client_logo">
+            <div class="client_logo card-awards14">
               <img src="img/clients/client_logo10.png" />
             </div>
           </div>
@@ -378,12 +481,11 @@
       </div>
     </div>
 
-    <!-- Start Happy Clients Section -->
     <section class="happyClients">
       <div class="happyClientsBgAnimation">
-        <img src="./img/Mask group.svg" alt="" />
+        <div id="particles-js1"></div>
       </div>
-      <div class="center_content">
+      <div class="happyClients_box center_content">
         <div class="happyClientsCOntainer">
           <div class="testimonoal">
             <div class="titalbar">
@@ -398,39 +500,31 @@
             <div class="testimonoalAllCard">
               <div class="testimonoalCard">
                 <div class="testimonoalCardTopContant">
-                  <img src="./img/logo/Vector.png" alt="" />
-                  <h3>750+</h3>
+                  <img src="img/icon_check.png" alt="" />
+                  <h3><span class="count">750</span>+</h3>
                 </div>
-                <h5>Projects Done</h5>
+                <h5>Happy Client</h5>
               </div>
               <div class="testimonoalCard">
                 <div class="testimonoalCardTopContant">
-                  <img src="./img/logo/Vector.png" alt="" />
-                  <h3>750+</h3>
+                  <img src="img/icon_check.png" alt="" />
+                  <h3><span class="count">1500</span>+</h3>
                 </div>
                 <h5>Projects Done</h5>
               </div>
             </div>
           </div>
-          <div class="review">
-            <div class="reviewMassage">
-              <div class="reviewMassageLeft">
-                <div class="reviewMassageLeftALLImg">
-                  <img
-                    class="reviewMassageLeftImage"
-                    src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
-                    alt=""
-                  />
-                  <img src="./img/businessman.jpg" alt="" />
-                  <img
-                    src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="reviewMassageCenter">
-                <div class="reviewALlMassage">
-                  <div class="reviewMassge">
+          <div class="review_right">
+            <div class="review_slider owl-carousel">
+              <div class="review">
+                <div class="reviewMassage">
+                  <div class="reviewMassageLeft">
+                    <img
+                      src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="reviewMassageCenter">
                     <h5>21 December 2022</h5>
                     <h2>Ed Kopko</h2>
                     <p>
@@ -440,19 +534,19 @@
                     </p>
                     <button>READ MORE</button>
                   </div>
-                  <div class="reviewMassge">
-                    <h5>21 December 2022</h5>
-                    <h2>Md. Shadat</h2>
-                    <p>
-                      We are extremely pleased with the exceptional services
-                      provided by Saffron Corporation Ltd throughout our project
-                      collaboration. We entrusted...
-                    </p>
-                    <button>READ MORE</button>
+                </div>
+              </div>
+              <div class="review">
+                <div class="reviewMassage">
+                  <div class="reviewMassageLeft">
+                    <img
+                      src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div class="reviewMassge">
+                  <div class="reviewMassageCenter">
                     <h5>21 December 2022</h5>
-                    <h2>Rakib Hassan</h2>
+                    <h2>Ed Kopko</h2>
                     <p>
                       We are extremely pleased with the exceptional services
                       provided by Saffron Corporation Ltd throughout our project
@@ -462,24 +556,34 @@
                   </div>
                 </div>
               </div>
-              <div class="reviewMassageRight">
-                <div onclick="currentSlide(1)" class="charkel"></div>
-                <!--- cActive -->
-                <div onclick="currentSlide(2)" class="charkel"></div>
-                <div onclick="currentSlide(3)" class="charkel"></div>
+              <div class="review">
+                <div class="reviewMassage">
+                  <div class="reviewMassageLeft">
+                    <img
+                      src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="reviewMassageCenter">
+                    <h5>21 December 2022</h5>
+                    <h2>Ed Kopko</h2>
+                    <p>
+                      We are extremely pleased with the exceptional services
+                      provided by Saffron Corporation Ltd throughout our project
+                      collaboration. We entrusted...
+                    </p>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <img
-        class="happyClientsBgAnimationBottomImage"
-        src="./img/Mask group.svg"
-        alt=""
-      />
+      <div class="happyClientsBgAnimation_bottom">
+        <div id="particles-js2"></div>
+      </div>
     </section>
-
-    <!-- End Happy Clients Section -->
 
     <div class="faq_section">
       <div class="faq_content center_content">
@@ -558,7 +662,13 @@
               AI, and IOT technologies/ frameworks for more than 4 years.
               Successfully delivered many clients...
             </p>
-            <a href="#" class="go_detail_page"></a>
+            <a
+              href="#"
+              class="go_detail_page wow pulse"
+              data-wow-delay="300ms"
+              data-wow-iteration="infinite"
+              data-wow-duration="2s"
+            ></a>
           </div>
         </div>
       </div>
@@ -566,28 +676,489 @@
 
     <div class="contact_us_area">
       <div class="contact_us_box center_content">
-        <div class="contact_man_photo wow fadeInLeft" data-wow-duration="2s">
+        <div class="contact_man_photo" data-aos="fade-right">
           <img src="img/man1.png" alt="" />
         </div>
         <div class="contact_form_area">
-          <div class="section_title wow rollIn" data-wow-duration="2s">
+          <div
+            class="section_title"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <h2>Contact Us</h2>
           </div>
-          <div class="contact_form_box"></div>
+          <div class="contact_form_box" data-aos="fade-left">
+            <form action="#">
+              <div class="form-group">
+                <div class="form-group-row flex-wrap">
+                  <div class="form-group-col w50">
+                    <label>Name <span>*</span></label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div class="form-group-col w50">
+                    <label>Email <span>*</span></label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-group-row flex-wrap">
+                  <div class="form-group-col w50">
+                    <label>Website</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Website"
+                    />
+                  </div>
+                  <div class="form-group-col w50">
+                    <label>Phone <span>*</span></label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="Phone"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-group-row flex-wrap">
+                  <div class="form-group-col w50">
+                    <label>Country <span>*</span></label>
+                    <select class="form-control">
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                    </select>
+                  </div>
+                  <div class="form-group-col w50">
+                    <label>What are you looking for? <span>*</span></label>
+                    <select class="form-control">
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                      <option>Select</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Message </label>
+                <div class="form-group-col">
+                  <textarea
+                    class="form-control"
+                    cols="10"
+                    rows="10"
+                    placeholder="Message..."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group-submit">
+                <input class="submit" type="submit" value="Submit" name="" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_area">
+      <div class="footer center_content flex-wrap">
+        <div class="footer_social">
+          <h4>Stay Connected</h4>
+          <div class="social_box flex-nowrap d-flex">
+            <a href="#"><img src="img/social/youtube.svg" alt="" /></a>
+            <a href="#"><img src="img/social/facebook.png" alt="" /></a>
+            <a href="#"><img src="img/social/instagram.png" alt="" /></a>
+            <a href="#"><img src="img/social/twitter.svg" alt="" /></a>
+          </div>
+        </div>
+        <div class="footer_right">
+          <h4>Your Privacy Choices</h4>
+          <div class="footer_menu flex-wrap">
+            <ul>
+              <li><a href="#">Contact SCL</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Trademarks</a></li>
+              <li><a href="#">Work List</a></li>
+            </ul>
+            <p>Copyright &copy; 2023 SCL. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="js/jquery.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-
     <script src="js/index.js"></script>
-
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
 
     <script>
+      particlesJS("particles-js2", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#f6d2d2" },
+          shape: {
+            type: "circle",
+            stroke: { width: 9, color: "#f6d2d2" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 1,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0, sync: true },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#f6d2d2",
+            opacity: 1,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "window",
+          events: {
+            onhover: { enable: false, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+    <script>
+      particlesJS("particles-js1", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#f6d2d2" },
+          shape: {
+            type: "circle",
+            stroke: { width: 9, color: "#f6d2d2" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 1,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0, sync: true },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#f6d2d2",
+            opacity: 1,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "window",
+          events: {
+            onhover: { enable: false, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+    <script>
+      particlesJS("particles-js3", {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: "#f6d2d2" },
+          shape: {
+            type: "circle",
+            stroke: { width: 9, color: "#f6d2d2" },
+            polygon: { nb_sides: 5 },
+            image: { src: "img/github.svg", width: 100, height: 100 },
+          },
+          opacity: {
+            value: 1,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0, sync: true },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#f6d2d2",
+            opacity: 1,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+          },
+        },
+        interactivity: {
+          detect_on: "window",
+          events: {
+            onhover: { enable: false, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 1 } },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+          },
+        },
+        retina_detect: true,
+      });
+      var count_particles, stats, update;
+      stats = new Stats();
+      stats.setMode(0);
+      stats.domElement.style.position = "absolute";
+      stats.domElement.style.left = "0px";
+      stats.domElement.style.top = "0px";
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector(".js-count-particles");
+      update = function () {
+        stats.begin();
+        stats.end();
+        if (
+          window.pJSDom[0].pJS.particles &&
+          window.pJSDom[0].pJS.particles.array
+        ) {
+          count_particles.innerText =
+            window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    </script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+
+      $(".count").counterUp({
+        delay: 10,
+        time: 1000,
+      });
+
+      var PrticalObject = {
+        languageName: [
+          "Natural Language Processing, HTML, CSS, JavaScript, PHP, Java, Python, Laravel, Mysql, React.Js, Node.Js, Express.JS, MongoDB, ASP.Net, C#, Angular, React Native, Web Development, Mobile Apps Development, Cyber Security, Genomics,",
+        ],
+        particalColorR: 209,
+        particalColorG: 29,
+        particalColorB: 39,
+        particaTextSize: 18,
+        particalTextColor: "#D11D27",
+        particalPointSize: 1,
+        prticalPointColor: "#D11D27",
+        particalSpeed: 0.5,
+        particalLineWidth: 2,
+      };
+    </script>
+    <script src="js/partical.js"></script>
+
+    <script>
+      (function (jQuery) {
+        jQuery(window).on("load", function () {
+          handlePreloader();
+        });
+        function handlePreloader() {
+          if (jQuery(".preloader").length) {
+            jQuery(".preloader").delay(3000).fadeOut();
+          }
+        }
+      })(jQuery);
+
+      (function ($) {
+        var preLoderLi = $(".preload li"),
+          pageDiv = $(".page-transition .div"),
+          slideDown = new TimelineMax({ paused: true }),
+          loading = new TimelineMax({ paused: true, repeat: 2 }),
+          slideUp = new TimelineMax({ paused: true }),
+          loadAnimation = new TimelineMax({ repeat: -1 });
+        slideDown.staggerTo(
+          pageDiv,
+          0.5,
+          {
+            bottom: "0%",
+            ease: Power2.easeIn,
+          },
+          0.2
+        );
+        loading
+          .staggerFrom(
+            preLoderLi,
+            0.5,
+            {
+              y: -15,
+              autoAlpha: 0,
+              ease: Power1.easeIn,
+            },
+            0.2
+          )
+          .staggerTo(
+            preLoderLi,
+            0.5,
+            {
+              y: 35,
+              autoAlpha: 0,
+              ease: Power1.easeIn,
+            },
+            0.1
+          );
+        slideUp.staggerTo(
+          pageDiv,
+          0.5,
+          {
+            bottom: "100%",
+            ease: Power2.easeOut,
+          },
+          0.2
+        );
+        loadAnimation
+          .add(slideDown.play(), 0.5)
+          .add(loading.play())
+          .add(slideUp.play());
+      })(jQuery);
+
       $(".slider").slick({
         draggable: true,
         autoplay: true,
@@ -671,6 +1242,30 @@
             items: 6,
             slideBy: 1,
             dotsEach: 2,
+          },
+        },
+      });
+      $(".review_slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 1,
+        nav: false,
+        mouseDrag: false,
+        touchDrag: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        dots: false,
+        slideBy: 1,
+        dotsEach: 1,
+        responsiveClass: true,
+        animateOut: "slideOutUp",
+        animateIn: "slideInUp",
+        responsive: {
+          0: {
+            items: 1,
+            margin: 0,
+            dotsEach: 1,
+            dots: true,
           },
         },
       });

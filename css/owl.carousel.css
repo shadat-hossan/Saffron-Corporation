@@ -238,8 +238,8 @@
  .owl-carousel .owl-nav button.owl-next {
      width: 52px;
      height:52px;
-     border: none;
-     background-color: rgba(71, 70, 70, 0.50);
+     border: 1px solid #B50107;
+     background-color: rgba(255, 255, 255, 1);
      border-radius: 50%;
      position: absolute;
      top: 50%;
@@ -248,6 +248,12 @@
      outline: none;
      transition: all 0.3s;
 }
+ .owl-carousel .owl-nav button.owl-prev:hover {
+    background: url('../img/arrow_item_left_hover.svg') no-repeat center;
+ }
+ .owl-carousel .owl-nav button.owl-next:hover {
+    background: url('../img/arrow_item_right_hover.svg') no-repeat center;
+ }
  .owl-carousel .owl-nav button.owl-prev:hover, 
  .owl-carousel .owl-nav button.owl-next:hover {
     background-color: #B50107;

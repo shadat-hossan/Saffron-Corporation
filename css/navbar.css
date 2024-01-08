@@ -12,7 +12,7 @@
   align-items: center;
   overflow: hidden;
   transition:all 0.5s ease;
-  z-index: 99;
+  z-index: 999;
 }
 .navbar-container .logo img{
   width: 210px;
@@ -131,7 +131,8 @@
       height: 80px;
  }
   .navbar-container {
-      padding: 0 20px;
+      padding: 10px 20px;
+      backdrop-filter: none;
  }
   .navbar-container .menu-toggle {
       display: block;
@@ -195,7 +196,7 @@
       background: rgb(237, 237, 237);
  }
 }
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .navbar-container .navbar-menu {
       width: 200px;
  }
