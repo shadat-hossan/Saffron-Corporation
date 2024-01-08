@@ -27,6 +27,9 @@
       rel="stylesheet"
     />
 
+    <!-- javaScript Script File Link -->
+    <script src="js/script.js" defer></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -412,25 +415,58 @@
           <div class="review">
             <div class="reviewMassage">
               <div class="reviewMassageLeft">
-                <img
-                  src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
-                  alt=""
-                />
+                <div class="reviewMassageLeftALLImg">
+                  <img
+                    class="reviewMassageLeftImage"
+                    src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
+                    alt=""
+                  />
+                  <img src="./img/businessman.jpg" alt="" />
+                  <img
+                    src="./img/pexels-linkedin-sales-navigator-2182970.jpg"
+                    alt=""
+                  />
+                </div>
               </div>
               <div class="reviewMassageCenter">
-                <h5>21 December 2022</h5>
-                <h2>Ed Kopko</h2>
-                <p>
-                  We are extremely pleased with the exceptional services
-                  provided by Saffron Corporation Ltd throughout our project
-                  collaboration. We entrusted...
-                </p>
-                <button>READ MORE</button>
+                <div class="reviewALlMassage">
+                  <div class="reviewMassge">
+                    <h5>21 December 2022</h5>
+                    <h2>Ed Kopko</h2>
+                    <p>
+                      We are extremely pleased with the exceptional services
+                      provided by Saffron Corporation Ltd throughout our project
+                      collaboration. We entrusted...
+                    </p>
+                    <button>READ MORE</button>
+                  </div>
+                  <div class="reviewMassge">
+                    <h5>21 December 2022</h5>
+                    <h2>Md. Shadat</h2>
+                    <p>
+                      We are extremely pleased with the exceptional services
+                      provided by Saffron Corporation Ltd throughout our project
+                      collaboration. We entrusted...
+                    </p>
+                    <button>READ MORE</button>
+                  </div>
+                  <div class="reviewMassge">
+                    <h5>21 December 2022</h5>
+                    <h2>Rakib Hassan</h2>
+                    <p>
+                      We are extremely pleased with the exceptional services
+                      provided by Saffron Corporation Ltd throughout our project
+                      collaboration. We entrusted...
+                    </p>
+                    <button>READ MORE</button>
+                  </div>
+                </div>
               </div>
               <div class="reviewMassageRight">
-                <div class="charkel"></div>
-                <div class="charkel cActive"></div>
-                <div class="charkel"></div>
+                <div onclick="currentSlide(1)" class="charkel"></div>
+                <!--- cActive -->
+                <div onclick="currentSlide(2)" class="charkel"></div>
+                <div onclick="currentSlide(3)" class="charkel"></div>
               </div>
             </div>
           </div>

@@ -1000,6 +1000,7 @@ input[placeholder],
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  transition: all 0.3s;
 }
 .testimonoalCard H5 {
   font-size: 18px;
@@ -1043,6 +1044,7 @@ input[placeholder],
   border-radius: 15px;
   padding: 10px;
   box-shadow: 10px 10px 30px 0px rgba(229, 90, 36, 0.63);
+  overflow: hidden;
 }
 
 .reviewMassageLeft img {
@@ -1050,10 +1052,32 @@ input[placeholder],
   height: 100%;
   object-fit: fill;
   border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.reviewMassageLeftALLImg {
+  transform: translateY(-0px);
+  transition: all 0.3s;
 }
 
 .reviewMassageCenter {
   flex: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.reviewMassageCenter {
+  height: 189px;
+  /* background: #b50107; */
+  overflow: hidden;
+}
+
+.reviewALlMassage {
+  transform: translateY(-0px);
+  transition: all 0.3s;
+}
+
+.reviewMassge {
+  margin-bottom: 15px;
 }
 
 .reviewMassageCenter h5 {
@@ -1112,6 +1136,8 @@ input[placeholder],
   height: 10px;
   border-radius: 30px;
   border: 3px solid #d11d27;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .cActive {
